@@ -1,0 +1,228 @@
+/*SITE SETUP*/
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+img {
+    width: 100%;
+}
+
+:root{
+--color-dark-blue:#152040; /* darkblue */
+--color-blue:#0588A6; /* blue */
+--color-beige-white:#FFF9ED;/* white */
+--color-light-blue:#07C4D9; /* aqua */
+--color-yellow:#FDAF2B; /* yellow */
+--color-light-yellow:#FFE69B; /* light yellow */
+--color-red-1:#D14242; /* red */
+}
+
+
+
+/* FONTS */
+@font-face {
+    font-family: MoonGet;
+    src: url(fonts/moon_get-Heavy.ttf)
+}   
+
+@font-face {
+    font-family: Neue;
+    src: url(fonts/NeueHaasUnica/NeueHaasUnica-Bold.ttf)
+}   
+
+@font-face{
+    font-family: BuiltTitling;
+    src: url(fonts/BuiltTitling/built\ titling\ bd.ttf)
+}
+
+
+/*GAME STYLES*/
+
+.game-board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 22px;
+    gap: 25px; 
+
+}
+
+.game-prompt{
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    align-items:center;
+
+    gap:10px;
+}
+
+.game-level-text{
+    color: #FDAF2B;
+    text-align: center;
+    font-family: Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.game-level-title{
+    color: #FDAF2B;
+    font-family: MoonGet;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.game-timer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.game-timer-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.game-level-time-logo{
+    height: 20px;
+    width: auto;
+}
+
+.game-level-time{
+    color: #FDAF2B;
+    text-align: center;
+    font-family: MoonGet;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.game-level-score{
+    color: #FDAF2B;
+    text-align: center;
+    font-family: MoonGet;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.game-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+}
+
+.grid-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+
+    color: #FDAF2B;
+    text-align: center;
+    font-family: MoonGet;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*
+.grid-button:hover{
+    background-color: #0588A6;
+}
+
+.grid-button:active{
+    background-color:#BF3D26;
+}
+*/
+
+.game-submit-btn{
+    background-color: #FDAF2B;
+
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+
+    color: white;
+    text-align: center;
+    font-family: MoonGet;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.game-submit-btn:hover{
+    background-color: #0588A6;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 768px){
+
+
+    }
+    
+    @media only screen and (max-width: 428px){
+        .game-prompt{
+            width: 90%;
+        }
+    
+        .game-level-text{
+            font-size: 16px;
+            text-align: center;
+        }
+    
+        .game-level-title{
+            font-size: 20px
+        }
+    
+        .grid-button{
+            width: 50px;
+            height: 50px;
+        }
+    
+        .game-level-time-logo{
+            height: 15px;
+            width: auto;
+        }
+    
+        .game-level-time{
+            font-size: 14px;
+        }
+    
+        .game-level-score{
+            font-size: 14px;
+        }
+    
+        .game-submit-btn{
+            height: 40px;
+            width: 100px;
+    
+            font-size: 16px;
+        }
+
+    }
