@@ -150,14 +150,14 @@ b{
 
 .end-title{
     font-family: MoonGet;
-    color: #E4BD78;
+    color: #fddd2b;
     text-shadow: 0 0 5px #E4BD78;
     font-size: 64px;
     text-align: center;
 }
 
 .end-message{
-    font-family: NeueHaasUnica;
+    font-family: Neue;
     font-weight: bold;
     color: #FFF;
     font-size: 18px;
@@ -166,6 +166,9 @@ b{
     width: 700px;
 }
 
+b{
+    color: #fddd2b;
+}
 .menu-btn{
     display: inline;
     background: none;
